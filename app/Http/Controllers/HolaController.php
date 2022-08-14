@@ -8,8 +8,8 @@ class HolaController extends Controller{
         return view("saludo", compact("name"));
     }
 
-    public function db(){
-        $users = DB::table('fortalezas')->get();
+    public function db(int $id){
+        $users = DB::table('fortalezas')->get("id")->where("id",$id);
 
         return $users;
     }

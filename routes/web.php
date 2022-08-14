@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hola/{name}', [HolaController::class, "db"]);
+Route::get('hola/{id}', [HolaController::class, "db"]);
