@@ -9,7 +9,7 @@ class HolaController extends Controller{
     }
 
     public function db(){
-        $users = DB::select('select * from dragon_city');
+        $users = DB::table('fortalezas')->get();
 
         return $users;
     }
